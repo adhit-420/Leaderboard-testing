@@ -16,17 +16,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'{inter.className} bg-slate-900 text-slate-100'}>{children}</body>
-=======
-      <body className={inter.className}>
+      <body className={'{inter.className} bg-slate-900 text-slate-100'}>{children}
         <main>
-          <nav>
-            <link rel="stylesheet" href="/">
-            Home
-            </link>
+          <nav style={{position:'fixed',top:'0'}}>
+            <a href="/login">Login   </a>
+            <a href='/table'>Table</a>
+            <br/>
           </nav>
         </main>
-        {children}</body>
+        </body>
     </html>
   )
 }
